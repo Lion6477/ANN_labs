@@ -1,14 +1,13 @@
 import keras
-import numpy as np
-from keras.layers import Dense
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
+from keras.layers import Dense
+
 import fill_csv as fl
 
-
 if __name__ == '__main__':
-
-    fl.run()
+    # fl.run()
 
     # створення набору даних, зчитаних з csv файлу
     def csv_reader(file_name):
@@ -23,7 +22,7 @@ if __name__ == '__main__':
         return dataset_features, dataset_labels
 
 
-    learning_rate = 0.01
+    learning_rate = 0.005
     nEpochs = 200
     batch_size = 600
 
@@ -33,7 +32,7 @@ if __name__ == '__main__':
     features_val, labels_val = csv_reader(
         "saturn_data_eval_second_ts.csv")
 
-    keras.utils.set_random_seed(123) #для відтворюваності результатів
+    keras.utils.set_random_seed(123)  # для відтворюваності результатів
     initializer = keras.initializers.GlorotNormal(seed=12)  # =Xavier
     model = keras.Sequential([
         Dense(input_shape=(2,), units=16, kernel_initializer=initializer, activation='relu'),
@@ -50,7 +49,7 @@ if __name__ == '__main__':
     model.save("saturn_model.keras")
     print('predict=')
     # За допомогою моделі визначити, якому класу належить точка
-    audit = np.array([[2,3]])
+    audit = np.array([[2, 3]])
     audit_output = model.predict(audit)
     print(audit_output)
     print(np.argmax(audit_output))
@@ -62,4 +61,3 @@ if __name__ == '__main__':
     plt.scatter(features_train[:, 0], features_train[:, 1], c=np.argmax(labels_train, axis=1), cmap='viridis')
     plt.colorbar()
     plt.show()
-
