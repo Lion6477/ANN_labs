@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 
 # Завантаження моделі
-model = keras.models.load_model("T2_trained_model_epochs-3_rate-0.001_loss-0.034_acc-0.99.keras")
+model = keras.models.load_model("T2_trained_model_epochs-3_rate-0.001_loss-0.034_acc-0.989.keras")
 
 # Обробка зображення для передбачення
 image_name = "image.png"
