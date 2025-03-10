@@ -2,7 +2,7 @@ from keras.layers import Dense
 from tensorflow.keras.preprocessing.image import (ImageDataGenerator)
 import keras
 import numpy as np
-# import d_create
+import d_create
 
 learning_rate = 0.001
 epochs = 15
@@ -10,17 +10,7 @@ batch_size = 4
 n_iny = 224
 n_inx = 224
 
-train_dir_name = "C:/Users/sekre/PycharmProjects/ANN_labs/4lab/train_d"
-test_dir_name = "C:/Users/sekre/PycharmProjects/ANN_labs/4lab/test_d"
-
-generator = ImageDataGenerator(rescale=1 / 255.,
-                               preprocessing_function=keras.applications.vgg16.preprocess_input)
-traingen = generator.flow_from_directory(train_dir_name,
-                                         target_size=(224, 224),
-                                         class_mode='categorical', shuffle=False, batch_size=batch_size)
-testgen = generator.flow_from_directory(test_dir_name,
-                                        target_size=(224, 224),
-                                        class_mode='categorical', shuffle=False, batch_size=batch_size)
+traingen, testgen = d_create.run()
 
 # 1) Завантажуємо вихідну навчену мережу як model_base.
 model_base = keras.applications.VGG16(weights='imagenet', input_shape=(n_iny, n_inx, 3),
