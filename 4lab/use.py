@@ -4,7 +4,7 @@ import numpy as np
 from keras.applications.vgg16 import decode_predictions
 
 # Завантаження моделі
-model = keras.models.load_model("Trained_model_epochs-15_rate-0.001_loss-0.868_acc-0.571.keras")
+model = keras.models.load_model("Trained_model_epochs-40_rate-0.001_loss-1.015_acc-0.6.keras")
 
 # Обробка зображення для передбачення
 file_name = "orange_cat.png"
@@ -20,10 +20,3 @@ img1 = np.expand_dims(img1, axis=0) # можна використати reshape
 prediction = model.predict(img1)
 predicted_class = np.argmax(prediction)
 print(f"Передбачений клас: {predicted_class}")
-
-# # Обробка зображення для передбачення
-# image_name = "orange_cat.png"
-# im1 = cv.imread(image_name, cv.IMREAD_GRAYSCALE)  # як чорно-біле
-# im_arr = cv.resize(im1, [28, 28])  # масштабування
-# im_arr = im_arr.reshape([1, 28, 28, 1])  # додаємо розмірності
-# im_arr = im_arr / 255  # стандартизація
