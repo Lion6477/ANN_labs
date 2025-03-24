@@ -5,47 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c08d2eba-1681-49b9-b388-325dcb6537bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/5lab/image.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/5lab/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5lab/video.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ANN_labs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ANN_labs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/4lab/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/454a0b4dthumbnail.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/Brown-Cat-Breeds-4951359.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/Cat_November_2010-1a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/GettyImages-514937248-363cfffc62414aa0aee6afb7648e9027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/a89f06f1bbc142174a253a950384aa93.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/aap-inline-brown-cats-british-shorthair.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/brown-munchkin-compressed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/images (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/4lab/ss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/0brown_cat/images.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/41db92945a13748ea529a6e473b94347.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/Cat_645742370_Teaser.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/GettyImages-1437850246-343ac979f4e648809a0a58053830e3d7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/IC_Blue_Melody_Flipper_CHA_male_EX1_CACIB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/chartreux-lying-on-floor-673148239-2000-218063aafc7840d0a53eda5b91706b18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/grey-British-Shorthair-compressed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/pexels-n-rod-8478515.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/photo-1472053217156-31b42df2319c.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/1gray_cat/young-cat-cat-cats-pet-2160bf9b560529584e1edf7ec9fc6dba.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/17_Desmond_LF_794A6656_video.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/20a2416c11bfcc141d9ebb743693eba8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/OrangeTabbyWhite_CatColor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/cat-breathing-fast-orange-kitten.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/images (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/orange-abyssinian-1223658583-447903ecfcb742f9a6e969a16f7ead6b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/orange-tabby.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/orange_cats_2-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/photo-1586164383881-d01525b539d6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/train_d/2orange_cat/photo-1593483316242-efb5420596ca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4lab/use.py" beforeDir="false" afterPath="$PROJECT_DIR$/4lab/use.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +81,7 @@
       <workItem from="1741980622638" duration="1324000" />
       <workItem from="1742813800026" duration="470000" />
       <workItem from="1742814278283" duration="425000" />
-      <workItem from="1742814740801" duration="552000" />
+      <workItem from="1742814740801" duration="923000" />
     </task>
     <servers />
   </component>
@@ -130,6 +91,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ANN_labs$train1.coverage" NAME="train1 Coverage Results" MODIFIED="1741980664828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3lab" />
     <SUITE FILE_PATH="coverage/ANN_labs$use.coverage" NAME="use Coverage Results" MODIFIED="1741981545008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3lab" />
-    <SUITE FILE_PATH="coverage/ANN_labs$main.coverage" NAME="main Coverage Results" MODIFIED="1742814606288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/5lab" />
+    <SUITE FILE_PATH="coverage/ANN_labs$main.coverage" NAME="main Coverage Results" MODIFIED="1742815771259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/5lab" />
   </component>
 </project>
