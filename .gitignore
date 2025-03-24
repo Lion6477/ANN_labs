@@ -3,3 +3,4 @@
 2lab/saturn_data_train_second_ts.csv
 /2lab/__pycache__
 *.keras
+.idea/workspace.xml
