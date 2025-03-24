@@ -4,7 +4,7 @@ import numpy as np
 from keras.applications.vgg16 import decode_predictions
 
 # Завантаження моделі
-model = keras.models.load_model("Trained_model_epochs-40_rate-0.001_loss-1.015_acc-0.6.keras")
+model = keras.models.load_model("Trained_model.keras")
 
 # Обробка зображення для передбачення
 file_name = "orange_cat.png"
