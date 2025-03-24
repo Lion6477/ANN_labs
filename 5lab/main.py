@@ -65,7 +65,7 @@ img4 = img3[:, :, 0]  # L канал - перший канал в LAB
 # 6) Вивести зображення img2 і img4 у вікна
 create_window('Grayscale (img2)', img2)
 create_window('L channel (img4)', img4)
-cv.waitKey(30000)  # Очікувати натискання клавіші 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 7) Вирізати частини з прямокутників і створити нове зображення img5
 # Вирізати частину з зеленого прямокутника
@@ -91,7 +91,7 @@ img5[height1:, :width2] = blue_rect_part
 
 # Вивести img5 у вікно
 create_window('Combined rectangles (img5)', img5)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 8) Нормувати зображення img1, отримавши numpy масив img6 (значення в діапазоні [0, 1])
 img6 = img1.astype(np.float32) / 255.0
@@ -104,25 +104,25 @@ img7 = img7.astype(np.uint8)
 # 10) Вивести зображення img7 у вікно і зберегти у файл
 create_window('Renormalized image (img7)', img7)
 cv.imwrite('output_image.jpg', img7)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 11) Збільшити розмір зображення img7 у 2 рази по x і у 3 рази по y
 h, w = img7.shape[:2]
 img7_resized = cv.resize(img7, (w * 2, h * 3))
 create_window('Resized img7', img7_resized)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 12) Перетворити LAB зображення img3 у зображення img8 у форматі BGR
 img8 = cv.cvtColor(img3, cv.COLOR_LAB2BGR)
 create_window('Back to BGR (img8)', img8)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 13) Побудувати замкнений багатокутник на зображення img1 та вивести у вікно
 vertices = np.array([[100, 400], [200, 300], [300, 350], [250, 450]], np.int32)
 vertices = vertices.reshape((-1, 1, 2))
 cv.polylines(img1, [vertices], isClosed=True, color=(0, 255, 255), thickness=2)
 create_window('Image with polygon', img1)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 14) Визначити, чи точка лежить всередині багатокутника
 test_point = (200, 350)  # Замініть на потрібні координати
@@ -142,7 +142,7 @@ def mouse_coords(event, x, y, flags, params):
 cv.namedWindow('Mouse coordinates', cv.WINDOW_AUTOSIZE)
 cv.setMouseCallback('Mouse coordinates', mouse_coords)
 create_window('Mouse coordinates', img1)
-cv.waitKey(30000)  # Додаткова пауза 30 секунд
+cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 
 # 16) Зчитати відео з файлу та відобразити його у вікні
