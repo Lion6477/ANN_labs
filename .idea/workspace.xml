@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c08d2eba-1681-49b9-b388-325dcb6537bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/5lab/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5lab/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/5lab/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1741980622638" duration="1324000" />
       <workItem from="1742813800026" duration="470000" />
       <workItem from="1742814278283" duration="425000" />
-      <workItem from="1742814740801" duration="923000" />
+      <workItem from="1742814740801" duration="1608000" />
     </task>
     <servers />
   </component>
@@ -91,6 +91,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ANN_labs$train1.coverage" NAME="train1 Coverage Results" MODIFIED="1741980664828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3lab" />
     <SUITE FILE_PATH="coverage/ANN_labs$use.coverage" NAME="use Coverage Results" MODIFIED="1741981545008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3lab" />
-    <SUITE FILE_PATH="coverage/ANN_labs$main.coverage" NAME="main Coverage Results" MODIFIED="1742815771259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/5lab" />
+    <SUITE FILE_PATH="coverage/ANN_labs$main.coverage" NAME="main Coverage Results" MODIFIED="1742816364680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/5lab" />
   </component>
 </project>
