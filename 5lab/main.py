@@ -1,9 +1,20 @@
 import cv2 as cv
 import numpy as np
 
+window_positions = {}
+window_counter = 0
+
+
+def get_next_window_position():
+    global window_counter
+    # Розташування вікон із зсувом 30 пікселів
+    position = (100 + (window_counter % 5) * 30, 100 + (window_counter % 5) * 30)
+    window_counter += 1
+    return position
+
 
 # Функція для створення обмежених за розміром вікон
-def create_window(window_name, img):
+def create_window(window_name, img, position):
     # Отримання розміру зображення
     h, w = img.shape[:2]
 
@@ -22,10 +33,20 @@ def create_window(window_name, img):
 
         # Створюємо вікно з автоматичним розміром і відображаємо масштабоване зображення
         cv.namedWindow(window_name, cv.WINDOW_AUTOSIZE)
+
+        # Встановлюємо положення вікна, якщо воно вказане
+        if position:
+            cv.moveWindow(window_name, position[0], position[1])
+
         cv.imshow(window_name, resized_img)
     else:
         # Якщо зображення не перевищує максимальні розміри, відображаємо його без змін
         cv.namedWindow(window_name, cv.WINDOW_AUTOSIZE)
+
+        # Встановлюємо положення вікна, якщо воно вказане
+        if position:
+            cv.moveWindow(window_name, position[0], position[1])
+
         cv.imshow(window_name, img)
 
 
@@ -51,7 +72,7 @@ cv.putText(img1, "OpenCV Test", (100, 300),
            thickness=2, color=(0, 0, 255))
 
 # 2.4) Вивести отримане зображення у вікно
-create_window('Original with drawings', img1)
+create_window('Original with drawings', img1, position=get_next_window_position())
 
 # 3) Перетворити img1 у зображення у градаціях сірого img2
 img2 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY)
@@ -63,8 +84,8 @@ img3 = cv.cvtColor(img1, cv.COLOR_BGR2LAB)
 img4 = img3[:, :, 0]  # L канал - перший канал в LAB
 
 # 6) Вивести зображення img2 і img4 у вікна
-create_window('Grayscale (img2)', img2)
-create_window('L channel (img4)', img4)
+create_window('Grayscale (img2)', img2, position=get_next_window_position())
+create_window('L channel (img4)', img4, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 7) Вирізати частини з прямокутників і створити нове зображення img5
@@ -90,7 +111,7 @@ img5[:height1, :width1] = green_rect_part
 img5[height1:, :width2] = blue_rect_part
 
 # Вивести img5 у вікно
-create_window('Combined rectangles (img5)', img5)
+create_window('Combined rectangles (img5)', img5, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 8) Нормувати зображення img1, отримавши numpy масив img6 (значення в діапазоні [0, 1])
@@ -102,26 +123,26 @@ img7 = img6 * 255
 img7 = img7.astype(np.uint8)
 
 # 10) Вивести зображення img7 у вікно і зберегти у файл
-create_window('Renormalized image (img7)', img7)
+create_window('Renormalized image (img7)', img7, position=get_next_window_position())
 cv.imwrite('output_image.jpg', img7)
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 11) Збільшити розмір зображення img7 у 2 рази по x і у 3 рази по y
 h, w = img7.shape[:2]
 img7_resized = cv.resize(img7, (w * 2, h * 3))
-create_window('Resized img7', img7_resized)
+create_window('Resized img7', img7_resized, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 12) Перетворити LAB зображення img3 у зображення img8 у форматі BGR
 img8 = cv.cvtColor(img3, cv.COLOR_LAB2BGR)
-create_window('Back to BGR (img8)', img8)
+create_window('Back to BGR (img8)', img8, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 13) Побудувати замкнений багатокутник на зображення img1 та вивести у вікно
 vertices = np.array([[100, 400], [200, 300], [300, 350], [250, 450]], np.int32)
 vertices = vertices.reshape((-1, 1, 2))
 cv.polylines(img1, [vertices], isClosed=True, color=(0, 255, 255), thickness=2)
-create_window('Image with polygon', img1)
+create_window('Image with polygon', img1, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 # 14) Визначити, чи точка лежить всередині багатокутника
@@ -141,7 +162,7 @@ def mouse_coords(event, x, y, flags, params):
 
 cv.namedWindow('Mouse coordinates', cv.WINDOW_AUTOSIZE)
 cv.setMouseCallback('Mouse coordinates', mouse_coords)
-create_window('Mouse coordinates', img1)
+create_window('Mouse coordinates', img1, position=get_next_window_position())
 cv.waitKey(20000)  # Очікувати натискання клавіші 20 секунд
 
 
