@@ -3,8 +3,8 @@ from tensorflow import keras
 
 #der run
 def run():
-    train_dir_name = "C:/Users/sekre/PycharmProjects/ANN_labs/4lab/train_d"
-    test_dir_name = "C:/Users/sekre/PycharmProjects/ANN_labs/4lab/test_d"
+    train_dir_name = "/4ImageClassificationVGG16base/train_d"
+    test_dir_name = "/4ImageClassificationVGG16base/test_d"
     batch_size = 4
 
     generator = ImageDataGenerator(rescale=1 / 255.,

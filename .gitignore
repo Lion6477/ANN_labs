@@ -1,6 +1,6 @@
-2lab/saturn_data_eval_second_ts.csv
-2lab/saturn_model.keras
-2lab/saturn_data_train_second_ts.csv
-/2lab/__pycache__
+2SaturnCircles/saturn_data_eval_second_ts.csv
+2SaturnCircles/saturn_model.keras
+2SaturnCircles/saturn_data_train_second_ts.csv
+/2SaturnCircles/__pycache__
 *.keras
 .idea/workspace.xml
